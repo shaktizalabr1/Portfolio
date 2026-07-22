@@ -14,19 +14,20 @@ const Hero = () => {
       className="relative min-h-screen overflow-hidden bg-[#050816]"
     >
       {/* Background Layers */}
-
+{/* 
       <AuroraBackground />
 
       <FloatingBlobs />
 
       <GridBackground />
 
-      <Noise />
+      
 
-      <MouseSpotlight />
+      <MouseSpotlight /> */}
 
       {/* Gradient Overlay */}
 
+      <Noise />
       <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-[#050816]" />
 
       {/* Main Container */}

@@ -68,7 +68,7 @@ const FloatingBlobs = () => {
             rounded-full
             bg-linear-to-br
             ${blob.color}
-            blur-[120px]
+            blur-[80px]
           `}
         />
       ))}

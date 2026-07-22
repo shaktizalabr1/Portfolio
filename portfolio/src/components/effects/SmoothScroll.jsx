@@ -1,21 +1,26 @@
 import { useEffect } from "react";
+import Lenis from "lenis";
 
-import Lenis from "@studio-freight/lenis";
 const SmoothScroll = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 1.1,
       smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 1,
     });
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+    let rafId;
 
-    requestAnimationFrame(raf);
+    const raf = (time) => {
+      lenis.raf(time);
+      rafId = requestAnimationFrame(raf);
+    };
+
+    rafId = requestAnimationFrame(raf);
 
     return () => {
+      cancelAnimationFrame(rafId);
       lenis.destroy();
     };
   }, []);

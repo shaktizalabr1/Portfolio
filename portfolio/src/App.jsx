@@ -6,7 +6,6 @@ import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
-import CursorGlow from "./components/effects/CursorGlow";
 import ScrollProgress from "./components/effects/ScrollProgress";
 import SmoothScroll from "./components/effects/SmoothScroll";
 import Experience from "./components/experience/Experience";
@@ -18,6 +17,7 @@ import Contact from "./components/contact/Contact";
 import CTA from "./components/cta/CTA";
 import Footer from "./components/footer/Footer";
 import SEO from "./components/seo/SEO";
+import MouseSpotlight from "./components/effects/MouseSpotlight";
 
 function App() {
   return (
@@ -30,10 +30,8 @@ function App() {
       <SmoothScroll/>
       <SEO />
       <ScrollProgress />
-      <CursorGlow />
       
       <Navbar />
-
       <Hero />
       <About />
       <Skills/>

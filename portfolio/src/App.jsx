@@ -1,3 +1,5 @@
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 import Loader from "./components/layout/Loader";
 import Navbar from "./components/layout/Navbar";
 import PageBackground from "./components/layout/PageBackground";
@@ -47,6 +49,7 @@ function App() {
       <CTA />
       <Footer/>
       
+      <SpeedInsights />
     </>
   );
 }
